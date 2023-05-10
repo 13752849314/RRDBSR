@@ -1,0 +1,28 @@
+name: RRDBNet_TL # network name
+epochs: 100
+train: True
+use_cuda: True
+lr: 0.0001 #learning rate
+gpus: 1 # use gpu number
+gpu_idx: [ 0 ] # use gpu name
+nb: 5
+nf: 64
+gc: 32
+sf: 10 # save frequency
+
+conv: TLConv # [Conv2d or TLConv]
+padding_mode: zeros
+bias: True
+
+# data
+data_path: ./data/Archive
+batch_size: 1
+size: [ 300, 200 ] # image size
+scala: 4  # Magnification
+grade: '6'
+in_ch: 3
+out_ch: 3
+
+result_path: ./results
+model_path: ./models
+logs_path: ./logs

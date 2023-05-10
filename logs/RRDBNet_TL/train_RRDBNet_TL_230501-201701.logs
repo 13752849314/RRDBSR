@@ -1,0 +1,324 @@
+23-05-01 20:17:01.961 - INFO:   name: RRDBNet_TL
+  epochs: 100
+  train: True
+  use_cuda: True
+  lr: 0.0001
+  gpus: 1
+  gpu_idx: [0]
+  nb: 5
+  nf: 64
+  gc: 32
+  sf: 10
+  conv: TLConv
+  padding_mode: zeros
+  bias: True
+  data_path: ./data/Archive
+  batch_size: 1
+  size: [300, 200]
+  scala: 4
+  grade: all
+  in_ch: 3
+  out_ch: 3
+  result_path: ./results\RRDBNet_TL
+  model_path: ./models\RRDBNet_TL
+  logs_path: ./logs\RRDBNet_TL
+
+23-05-01 20:17:01.970 - INFO: data Set ArchiveSet
+model is train
+have images 2257
+23-05-01 20:17:01.970 - INFO: data Set ArchiveSet
+model is val
+have images 752
+23-05-01 20:17:02.124 - INFO: RRDBNet(
+  (conv_first): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (RRDB_trunk): Sequential(
+    (0): RRDB(
+      (RRDB1): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB2): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB3): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (1): RRDB(
+      (RRDB1): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB2): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB3): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (2): RRDB(
+      (RRDB1): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB2): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB3): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (3): RRDB(
+      (RRDB1): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB2): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB3): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+    (4): RRDB(
+      (RRDB1): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB2): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+      (RRDB3): RD5c(
+        (conv1): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv2): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv3): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv4): TLConv(
+          (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (conv5): TLConv(
+          (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        )
+        (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+      )
+    )
+  )
+  (trunk_conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (upconv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (upconv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (HRconv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv_last): Conv2d(64, 3, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (lrelu): LeakyReLU(negative_slope=0.2, inplace=True)
+  (sig): Sigmoid()
+)
+23-05-01 20:17:02.131 - INFO: start training!

@@ -1,0 +1,19 @@
+name: RRDBNet # network name
+train: False
+use_cuda: True
+gpus: 1 # use gpu number
+gpu_idx: [ 0 ] # use gpu name
+model: 300_300.pth
+
+# data
+data_path: ./data/Archive
+batch_size: 1
+size: [ 300, 200 ] # image size
+scala: 4  # Magnification
+grade: 'all'
+in_ch: 3
+out_ch: 3
+
+result_path: ./results
+model_path: ./models
+logs_path: ./logs
