@@ -9,7 +9,7 @@
 ## Download by
 
 ```
-git clone 
+git clone git@github.com:13752849314/RRDBSR.git
 ```
 
 train data at [here](https://www.kaggle.com/datasets/quadeer15sh/image-super-resolution-from-unsplash)
